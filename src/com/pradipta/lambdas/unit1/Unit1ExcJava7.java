@@ -1,4 +1,4 @@
-package com.pradipta.lambas;
+package com.pradipta.lambdas.unit1;
 
 import java.util.Arrays;
 import java.util.Comparator;

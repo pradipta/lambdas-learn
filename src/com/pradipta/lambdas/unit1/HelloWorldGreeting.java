@@ -1,4 +1,4 @@
-package com.pradipta.lambas;
+package com.pradipta.lambdas.unit1;
 
 public class HelloWorldGreeting implements Greeting {
     @Override
