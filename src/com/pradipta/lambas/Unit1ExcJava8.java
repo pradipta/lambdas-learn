@@ -3,6 +3,7 @@ package com.pradipta.lambas;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Unit1ExcJava8 {
 
@@ -38,9 +39,9 @@ public class Unit1ExcJava8 {
         System.out.println("Sorted in Java7: "+ persons);
     }
 
-    public static void printConditional(List<Person> persons, Condition condition){
+    public static void printConditional(List<Person> persons, Predicate<Person> condition){
         for (Person person: persons){
-            if (condition.satisfies(person)){
+            if (condition.test(person)){
                 System.out.println(person);
             }
         }
@@ -49,8 +50,8 @@ public class Unit1ExcJava8 {
     public static void printAll(List<Person> persons) {
         printConditional(persons, person -> true);
     }
-
-    public interface Condition {
-        public Boolean satisfies(Person person);
-    }
+//
+//    public interface Condition {
+//        public Boolean satisfies(Person person);
+//    }
 }
